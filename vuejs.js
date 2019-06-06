@@ -3,13 +3,15 @@ var app = new Vue({
     data: {
         title: "Contacts VueJS",
         message_error: "Contact not found.",
-        message_success: "Found!",
+        message_success: "Found success!",
         contact: {
-            id: 1,
-            name: "David Sodre Lins",
-            phone: "+5571992035786",
-            email: "davidsodre@outlook.com.br"
-        }
+            id: Math.ceil(Math.random()*100),
+            name: "",
+            phone: "",
+            email: "",
+            gender: "",
+            see_on: []
+           }
         
     }
 });

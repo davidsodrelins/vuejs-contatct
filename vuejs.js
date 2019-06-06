@@ -10,8 +10,10 @@ var app = new Vue({
             phone: "",
             email: "",
             gender: "",
-            see_on: []
-           }
+            see_on: [],
+            photo: "https://lh6.googleusercontent.com/-AsnFU5-SUhE/AAAAAAAAAAI/AAAAAAAAArM/4a6JDmfqvYs/photo.jpg",
+            alt: "Contact Photo"          
+        }
         
     }
 });

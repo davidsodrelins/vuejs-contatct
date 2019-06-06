@@ -28,6 +28,10 @@
         <input type="text" v-model="contact.email">
         <br>
 
+        <img v-bind:src="contact.photo" v-bind:alt="contact.alt">
+        <br>
+        
+
         <label>Gender</label>
         <input type="radio" value="male" v-model="contact.gender">Male
         <input type="radio" value="female" v-model="contact.gender">Female
@@ -49,10 +53,11 @@
         Name: {{ contact.name }}<br>
         Phone: {{ contact.phone }}<br>
         e-mail: {{ contact.email }}<br>
+        Photo adress: {{ contact.photo }}
         Gender: {{ contact.gender }}<br>
         Seen On: {{ contact.seen_on }}<br>
 
-        
+
         <div v-if="contact.name == 'David Sodré Lins'">
             ID: {{ contact.id }}<br>
             Name: {{ contact.name }}<br>
